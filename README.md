@@ -7,17 +7,42 @@ multiple, different interaction techniques for the list selection.
 I developed these conceptual ideas and the app in a small project which I did as 
 part of my Master studies in the Media Informatics program at the University Ulm.
 As a next step, I conducted an academic study to evaluate different interaction
-techniques and interface variations against each other. The results have in
-the meantime been published as an academic paper: 
-Circular Selection: Optimizing List Selection for Smartwatches.
+techniques and interface variations against each other. In the study the usability 
+of the interface has been evaluatedin terms of speed, error rate, hedonistic qualities
+(i.e. user satisfaction), etc..
+The results have in the meantime been published as an academic paper: 
+[Circular Selection: Optimizing List Selection for Smartwatches]().
+
+The basic interaction is that the ring on the bezel of the smartwatch can
+be used to select a sublist of a larger list.
+
+I have only tested the software with the Motorola Moto 360 and am unsure
+how it behaves on other Smartwatches.
 
 
 ## How it looks
 
 ![Circular Selection](https://github.com/cmichi/circular-selection/raw/master/images/circular-selection.png)
 
+The black area (the ``flat tire'') is a hardware characteristic of the Moto 360,
+behind this black area sensors are placed. The software itself is
+independent of this shortcoming.
+
+
 ## Interface Variations
 
+The app supports variations in term of 
+
+ * Direction of the characters on the ring (A-Z or Z-A)
+ * Interaction technique (How a character is selected): Single Tap, Rotation, etc.
+ * Button Size: the buttons for individual characters on the ring can be
+   either of equal size for all buttons or the button size can be different
+   for each character, based on the size of the sublist behind it (i.e.
+   the number of items which start with this certain character, meaning
+   they have this character as a first character).
+
+The paper describes the influence of all these variables on the usability of the 
+interface in further detail.
 
 ## Citations (BibTeX/BibLaTeX)
 
