@@ -1,15 +1,32 @@
 # Circular Selection
 
-This repository is an app which ...
+This repository contains a circular list selection interface for Android
+Wear. The interface is optimized for round smartwatches. The app supports 
+multiple, different interaction techniques for the list selection.
+
+I developed these conceptual ideas and the app in a small project which I did as 
+part of my Master studies in the Media Informatics program at the University Ulm.
+As a next step, I conducted an academic study to evaluate different interaction
+techniques and interface variations against each other. The results have in
+the meantime been published as an academic paper: 
+Circular Selection: Optimizing List Selection for Smartwatches.
+
+
+## How it looks
+
+![Circular Selection](https://github.com/cmichi/circular-selection/raw/master/images/circular-selection.png)
+
+## Interface Variations
+
 
 ## Citations (BibTeX/BibLaTeX)
 
-	@inproceedings{iwsc16,
+	@inproceedings{iwsc2016,
 		title = {Circular Selection: Optimizing List Selection for Smartwatches},
 		booktitle={Proceedings of the 2015 ACM International Symposium on Wearable Computers},
 		year={2016},
 		organization={ACM},
-		author = {Plaumann, Katrin and M\xc3\xbcller, Michael and Rukzio, Enrico},
+		author = {Plaumann, Katrin and Müller, Michael and Rukzio, Enrico},
 		langid = {english},
 		langidopts = {variant=british},
 	}
