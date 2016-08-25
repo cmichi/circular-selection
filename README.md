@@ -2,7 +2,9 @@
 
 This repository contains a circular list selection interface for Android
 Wear. The interface is optimized for round smartwatches. The app supports 
-multiple, different interaction techniques for the list selection.
+multiple, different interaction techniques for the list selection with the 
+basic interaction being that the ring on the bezel of the smartwatch can
+be used to select a sublist of a larger list.
 
 I developed these conceptual ideas and the app in a small project which I did as 
 part of my Master studies in the Media Informatics program at the University Ulm.
@@ -13,9 +15,6 @@ of the interface has been evaluatedin terms of speed, error rate, hedonistic qua
 The results have in the meantime been published as an academic paper: 
 [Circular Selection: Optimizing List Selection for Smartwatches]().
 
-The basic interaction is that the ring on the bezel of the smartwatch can
-be used to select a sublist of a larger list.
-
 I have only tested the software with the Motorola Moto 360 and am unsure
 how it behaves on other Smartwatches.
 
@@ -24,10 +23,9 @@ how it behaves on other Smartwatches.
 
 ![Circular Selection](https://github.com/cmichi/circular-selection/raw/master/images/circular-selection.png)
 
-The black area (the ``flat tire'') is a hardware characteristic of the Moto 360,
+The black area (the "flat tire") is a hardware characteristic of the Moto 360,
 behind this black area sensors are placed. The software itself is
 independent of this shortcoming.
-
 
 ## Interface Variations
 
@@ -43,6 +41,12 @@ The app supports variations in term of
 
 The paper describes the influence of all these variables on the usability of the 
 interface in further detail.
+
+The following graphic depicts how these variables influence the design of
+the interface.
+
+![Circular Selection](https://github.com/cmichi/circular-selection/raw/master/images/sketches.png)
+
 
 ## Citations (BibTeX/BibLaTeX)
 
