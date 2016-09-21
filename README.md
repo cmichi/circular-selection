@@ -8,15 +8,17 @@ be used to select a sublist of a larger list.
 
 I developed these conceptual ideas and the app in a small project which I did as 
 part of my Master studies in the Media Informatics program at the University Ulm.
-As a next step, I conducted an academic study to evaluate different interaction
-techniques and interface variations against each other. In the study the usability 
-of the interface has been evaluatedin terms of speed, error rate, hedonistic qualities
-(i.e. user satisfaction), etc..
+A modified version of the app has been used to conduct an academic study in which 
+I evaluated different interaction techniques and interface variations against each 
+other. In the study the usability of the interface has been evaluated in terms of 
+speed, error rate, hedonistic qualities (i.e. user satisfaction), etc..
 The results have in the meantime been published as an academic paper: 
-[Circular Selection: Optimizing List Selection for Smartwatches]().
+[Circular Selection: Optimizing List Selection for Smartwatches](http://dl.acm.org/citation.cfm?id=2971766).
 
 I have only tested the software with the Motorola Moto 360 and am unsure
-how it behaves on other Smartwatches.
+how it behaves on other Smartwatches. Also, this app shouldn't be taken as
+ready for production -- it is a limited prototype that was used in a 
+pre-defined setting and clear context.
 
 
 ## How it looks
@@ -31,9 +33,9 @@ independent of this shortcoming.
 
 The app supports variations in term of 
 
- * Direction of the characters on the ring (A-Z or Z-A)
- * Interaction technique (How a character is selected): Single Tap, Rotation, etc.
- * Button Size: the buttons for individual characters on the ring can be
+ * *Direction* of the characters on the ring (A-Z or Z-A)
+ * *Interaction technique*: How a character is selected (Single Tap, Rotation, etc.)
+ * *Button Size*: The buttons for individual characters on the ring can be
    either of equal size for all buttons or the button size can be different
    for each character, based on the size of the sublist behind it (i.e.
    the number of items which start with this certain character, meaning
@@ -50,17 +52,24 @@ the interface.
 
 ## Citations (BibTeX/BibLaTeX)
 
-	@inproceedings{iwsc2016,
-		title = {Circular Selection: Optimizing List Selection for Smartwatches},
-		booktitle={Proceedings of the 2015 ACM International Symposium on Wearable Computers},
-		year={2016},
-		organization={ACM},
-		author = {Plaumann, Katrin and Müller, Michael and Rukzio, Enrico},
-		langid = {english},
-		langidopts = {variant=british},
+	@inproceedings{Iwsc2016,
+		author = {Plaumann, Katrin and M\"{u}ller, Michael and Rukzio, Enrico},
+		title = {CircularSelection: Optimizing List Selection for Smartwatches},
+		booktitle = {Proceedings of the 2016 ACM International Symposium on Wearable Computers},
+		series = {ISWC '16},
+		year = {2016},
+		isbn = {978-1-4503-4460-9},
+		location = {Heidelberg, Germany},
+		pages = {128--135},
+		numpages = {8},
+		url = {http://doi.acm.org/10.1145/2971763.2971766},
+		doi = {10.1145/2971763.2971766},
+		acmid = {2971766},
+		publisher = {ACM},
+		address = {New York, NY, USA},
+		keywords = {circular interface, list selection, smartwatch, wearables},
 	}
 
-	ToDo: add pdf and acm link!
 
 ## License
 
