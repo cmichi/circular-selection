@@ -17,22 +17,25 @@ The results have in the meantime been published as an academic paper:
 
 **Project Status:**
 I have only tested the software with the Motorola Moto 360 and Android Wear 1 
-and am unsure how it behaves on other Smartwatches. Also, this app shouldn't be 
-taken as ready for production -- it is a limited prototype that was used in a 
-pre-defined setting and clear context.
+and am unsure how it behaves on other Smartwatches. This app shouldn't be 
+taken as ready for production — it is a limited prototype that was 
+used in a pre-defined setting and clear context.
 
 
 ## How it looks
 
 ![Circular Selection](https://github.com/cmichi/circular-selection/raw/master/images/circular-selection.png)
 
-The black area (the "flat tire") is a hardware characteristic of the Moto 360,
-behind this black area sensors are placed. The software itself is
-independent of this shortcoming.
+In the left photo the watch has a black area on the bottom. This "flat tire" is a hardware 
+characteristic of the Moto 360, behind this black area sensors are placed. The app 
+itself is independent of this shortcoming.
 
-## Interface Variations
+### Interface Variations
 
-The app supports variations in term of 
+![Circular Selection](https://github.com/cmichi/circular-selection/raw/master/images/sketches.png)
+
+The app supports a couple of variables which can be tweaked to adapt the
+interface. The above illustration depicts possible results.
 
  * *Direction* of the characters on the ring (A-Z or Z-A)
  * *Interaction technique*: How a character is selected (Single Tap, Rotation, etc.)
@@ -42,16 +45,11 @@ The app supports variations in term of
    the number of items which start with this certain character, meaning
    they have this character as a first character).
 
-The paper describes the influence of all these variables on the usability of the 
-interface in further detail.
-
-The following graphic depicts how these variables influence the design of
-the interface.
-
-![Circular Selection](https://github.com/cmichi/circular-selection/raw/master/images/sketches.png)
+The above mentioned paper describes the influence of all these variables on the usability 
+of the interface in further detail.
 
 
-## Citations (BibTeX/BibLaTeX)
+## Cite (BibTeX/BibLaTeX)
 
 	@inproceedings{Iwsc2016,
 		author = {Plaumann, Katrin and M\"{u}ller, Michael and Rukzio, Enrico},
