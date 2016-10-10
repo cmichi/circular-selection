@@ -1,6 +1,5 @@
 package de.uulm.mhci.circularselection.circularselection.controller;
 
-import android.support.wearable.view.WearableListView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -9,7 +8,7 @@ import java.util.LinkedHashMap;
 import de.uulm.mhci.circularselection.circularselection.CircularListView;
 import de.uulm.mhci.circularselection.circularselection.model.ListModel;
 
-public class ListController implements WearableListView.ClickListener {
+public class ListController {
 
     private ListModel listModel;
     private RingController ringController;
@@ -28,16 +27,6 @@ public class ListController implements WearableListView.ClickListener {
 
     public int getSelectedKeyIndex() {
         return ringController.currentGlyphIndex;
-    }
-
-    @Override
-    public void onClick(WearableListView.ViewHolder v) {
-        Integer tag = (Integer) v.itemView.getTag();
-        circularListView.getClickListener().onClick("" + tag);
-    }
-
-    @Override
-    public void onTopEmptyRegionClick() {
     }
 
     public ListModel getModel() {
