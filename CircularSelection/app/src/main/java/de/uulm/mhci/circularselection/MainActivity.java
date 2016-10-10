@@ -14,10 +14,8 @@ import de.uulm.mhci.circularselection.circularselection.CircularListView;
 import de.uulm.mhci.circularselection.circularselection.CircularListView.Alphabet;
 import de.uulm.mhci.circularselection.circularselection.CircularListView.ChamberSize;
 import de.uulm.mhci.circularselection.circularselection.CircularListView.Interaction;
-import de.uulm.mhci.circularselection.circularselection.interfaces.CircularListViewListener;
 
-public class MainActivity extends Activity
-        implements CircularListViewListener, AdapterView.OnItemClickListener {
+public class MainActivity extends Activity implements AdapterView.OnItemClickListener {
 
     private CircularListView circularListView;
 
@@ -55,12 +53,7 @@ public class MainActivity extends Activity
 
         circularListView = new CircularListView(this, items, chamberSize,
                 interactionTechnique, alphabetDirection);
-        circularListView.setClickListener(this);
         setContentView(circularListView);
-    }
-
-    public void onClick(String s) {
-        Log.i("Circular Selection", "clicked! " + s);
     }
 
     @Override

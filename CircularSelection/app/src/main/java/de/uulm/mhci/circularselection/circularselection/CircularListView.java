@@ -19,13 +19,11 @@ import de.uulm.mhci.circularselection.MainActivity;
 import de.uulm.mhci.circularselection.R;
 import de.uulm.mhci.circularselection.circularselection.controller.ListController;
 import de.uulm.mhci.circularselection.circularselection.controller.RingController;
-import de.uulm.mhci.circularselection.circularselection.interfaces.CircularListViewListener;
 import de.uulm.mhci.circularselection.circularselection.view.RingView;
 
 public class CircularListView extends RelativeLayout {
 
     private LinkedHashMap<String, ArrayList<String>> dataset;
-    private CircularListViewListener clickListener;
 
     public enum ChamberSize {FIXED, DYNAMIC}
 
@@ -40,6 +38,7 @@ public class CircularListView extends RelativeLayout {
     public static Interaction INTERACTION;
 
     private RingView ringView;
+
     public RingController ringController;
 
     private ListView listView;
@@ -169,21 +168,12 @@ public class CircularListView extends RelativeLayout {
         }
     }
 
-    public void setClickListener(MainActivity clickListener) {
-        this.clickListener = clickListener;
-    }
-
-    public CircularListViewListener getClickListener() {
-        return this.clickListener;
-    }
-
     /**
      * @param pos Position of an item witihin a ListView, placed in the inner side of the ring.
      * @return returns the total position of this item (meaning not only in the currently selected
      * glyph, but rather overall)
      */
     public String getTotalItem(int pos) {
-        String currentGlyph = ringController.getCurrentGlyph();
         return ringController.currentListValues[pos];
     }
 }

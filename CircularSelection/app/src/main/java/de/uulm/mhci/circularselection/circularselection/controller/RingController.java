@@ -102,7 +102,8 @@ public class RingController implements
             circularListView.invalidate();
             listView.invalidate();
             ringView.invalidate();
-        } else if (circularListView.INTERACTION == CircularListView.Interaction.MOVABLE_RING || circularListView.INTERACTION == CircularListView.Interaction.JUMP_BACK_RING) {
+        } else if (circularListView.INTERACTION == CircularListView.Interaction.MOVABLE_RING ||
+                   circularListView.INTERACTION == CircularListView.Interaction.JUMP_BACK_RING) {
             switch (event.getActionMasked()) {
                 case MotionEvent.ACTION_DOWN:
                     startAngle = touchAngle(touchX, touchY);
@@ -183,7 +184,8 @@ public class RingController implements
     }
 
     @Override
-    public void onLayoutChange(View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
+    public void onLayoutChange(View v, int left, int top, int right, int bottom, int oldLeft,
+                               int oldTop, int oldRight, int oldBottom) {
         centerX = v.getMeasuredWidth() / 2f;
         centerY = v.getMeasuredHeight() / 2f;
     }

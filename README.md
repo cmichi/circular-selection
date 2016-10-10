@@ -45,7 +45,7 @@ interface. The above illustration depicts possible results.
    the number of items which start with this certain character, meaning
    they have this character as a first character).
 
-The above mentioned paper describes the influence of all these variables on the usability 
+The paper mentioned above describes the influence of all these variables on the usability 
 of the interface in further detail.
 
 
