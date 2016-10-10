@@ -47,7 +47,7 @@ interface. The above illustration depicts possible results.
    button. If the button size is chosen dynamically, the size is based on the 
    number of items behind it. For example, in a list of names the button
    "M" may be very large because the list might contain a lot of names
-   starting with "M".
+   starting with "M" -- Mayer, Mueller, etc..
 
 The paper mentioned above describes the influence of all these variables on the usability 
 of the interface in further detail.
