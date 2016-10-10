@@ -16,7 +16,7 @@ The results have in the meantime been published as an academic paper:
 [Circular Selection: Optimizing List Selection for Smartwatches](http://dl.acm.org/citation.cfm?id=2971766).
 
 **Project Status:**
-I have only tested the software with the Motorola Moto 360 and Android Wear 1 
+I have only tested the software with the Motorola Moto 360 and Android Wear 1
 and am unsure how it behaves on other Smartwatches. This app shouldn't be 
 taken as ready for production — it is a limited prototype that was 
 used in a pre-defined setting and clear context.
