@@ -37,16 +37,17 @@ itself is independent of this shortcoming.
 The app supports a couple of variables which can be tweaked to adapt the
 interface. The above illustration depicts possible results.
 
- * *Direction* of the characters on the ring (A-Z or Z-A)
+ * *Direction* of the characters on the ring (A-Z or Z-A).
  * *Interaction technique*: How a character is selected. The app supports three
    techniques: a fixed ring with selection via tap, a ring which can be rotated
    with the selected character being the one at 12 o'clock, and a ring
    which has the same metaphor as a rotary phone.
  * *Button Size*: The buttons for individual characters on the ring can be
-   either of equal size for all buttons or the button size can be different
-   for each character, based on the size of the sublist behind it (i.e.
-   the number of items which start with this certain character, meaning
-   they have this character as a first character).
+   either of equal size for all buttons or dynamically adapted for each individual 
+   button. If the button size is chosen dynamically, the size is based on the 
+   number of items behind it. For example, in a list of names the button
+   "M" may be very large because the list might contain a lot of names
+   starting with "M".
 
 The paper mentioned above describes the influence of all these variables on the usability 
 of the interface in further detail.
