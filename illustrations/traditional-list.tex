@@ -1,0 +1,45 @@
+\documentclass[tikz]{standalone}
+
+\usepackage{tikz}
+
+\begin{document}
+
+% define two rings, inner_radius = 2, outer_radius = 3
+\def\ring{(0,0) circle (2)}
+\def\innerring{(0,0) circle (2)}
+
+\tikzset{
+	state/.style={circle, draw, minimum size=6ex},
+	arrow/.style={-latex, shorten >=3pt, shorten <=3pt}
+}
+
+\tikzstyle{entry} = [text width=2.6cm, align=left, draw=none, fill=none]
+
+\begin{tikzpicture}
+	\draw [semithick] \ring;
+
+	% draw stuff in the inner ring
+	%\draw [arrow,thick,black] (1.4,0.85) to (1.4,-1);
+	%\draw [fill=black] (1.4,0.75) circle (0.04cm);
+
+	\begin{scope}[even odd rule]
+		\clip \innerring;
+		\def\x{0.80}
+		\fill [fill=black, stroke=none, opacity=0.3] (-1.0cm, 1.13) circle (0.25cm);
+		\fill [fill=black, stroke=none, opacity=0.5] (-1.0cm, 0.05) circle (0.375cm);
+		\fill [fill=black, stroke=none, opacity=0.3] (-1.0cm, -1.07) circle (0.25cm);
+		Andorra
+		Angola
+		Anguilla
+		Antarctica
+
+
+		\node[entry] at (\x,2.0) {\textsf{\normalsize Andorra}};
+		\node[entry] at (\x,1.1) {\textsf{\normalsize Angola}};
+		\node[entry] at (\x,-0.0) {\textsf{\normalsize Anguilla}};
+		\node[entry] at (\x,-1.1) {\textsf{\normalsize Antarctica}};
+		\node[entry] at (\x,-2.0) {\textsf{\normalsize Argentina}};
+	\end{scope}
+\end{tikzpicture}
+
+\end{document}
